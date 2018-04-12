@@ -13,8 +13,8 @@ namespace LuisCVApi.Repository
     {
         private static readonly string DatabaseId = "images";
         private static readonly string CollectionId = "metadata";
-        private static readonly string Endpoint = "https://hmhengacdb.documents.azure.com:443/";
-        private static readonly string AuthKey = "d7mSztifceYhJMnorNTLeJ5vRHo8xq3Zebl8CPdsRV9yQghcaltKS7tmpZcM4YGVDoqQxtkmjgt0oTDYRG1YdA==";
+        private static readonly string Endpoint = "<replace with your cosmosdb endpoint here>";
+        private static readonly string AuthKey = "<replace with your cosmosdb auth key here>";
         private static DocumentClient client;
 
         public static void Initialize()
