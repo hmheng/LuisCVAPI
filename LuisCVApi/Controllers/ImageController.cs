@@ -28,7 +28,7 @@ namespace LuisCVApi.Controllers
         [HttpGet("{param}")]
         public async Task<IEnumerable<string>> GetImages(string param)
         {
-            string LuisEndPoint = "https://westus.api.cognitive.microsoft.com/luis/v2.0/apps/06e8aeb7-dd4d-4805-976f-b932bf3ff7c6?subscription-key=39001e52b8ab4854ab752211b97ec933&verbose=true&timezoneOffset=0&q=";
+            string LuisEndPoint = "<replace with your LUIS end point from Publish setting here>";
             List<string> images = new List<string>();
             HttpClient _httpClient = new HttpClient();
             _httpClient.DefaultRequestHeaders.Accept.Add(
